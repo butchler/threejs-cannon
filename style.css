@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Woodgod';
+    src: url('resources/woodgod.woff') format('woff'),
+         url('resources/woodgod.ttf') format('truetype');
+}
+
+html, body {
+    /* Make sure canvas fills screen */
+    margin: 0;
+    padding: 0;
+    /* Prevent scrollbars */
+    overflow: hidden;
+    /* Hide mouse */
+    cursor: none;
+}
+
+.dialog, .dialog-confirm-button {
+    color: rgb(255, 255, 200);
+    font-family: 'Woodgod', sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+}
+
+.dialog em {
+    color: red;
+    font-size: 1.5em;
+}
+
+.dialog {
+    background-color: rgba(0, 0, 30, 0.8);
+    text-align: center;
+
+    position: absolute;
+    left: 30%;
+    top: 25%;
+    width: 40%;
+    z-index: 1;
+    padding: 2em;
+
+    cursor: auto;
+
+    /* Hidden by default */
+    display: none;
+}
+
+.dialog-confirm-button {
+    font-size: 100%;
+
+    border: none;
+    background-color: rgba(30, 30, 60, 0.8);
+    padding: 1em 2em;
+    margin-top: 1em;
+
+    cursor: pointer;
+}
